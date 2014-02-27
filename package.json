@@ -1,0 +1,19 @@
+{
+  "name": "gulp-replace-ref",
+  "version": "0.0.0",
+  "description": "Replace file references in the target files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/weisuke/gulp-replace-ref.git"
+  },
+  "author": "Wei Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weisuke/gulp-replace-ref/issues"
+  },
+  "homepage": "https://github.com/weisuke/gulp-replace-ref"
+}
