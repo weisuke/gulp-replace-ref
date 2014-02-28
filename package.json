@@ -1,6 +1,6 @@
 {
   "name": "gulp-replace-ref",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Replace file references in the target files",
   "main": "index.js",
   "scripts": {
