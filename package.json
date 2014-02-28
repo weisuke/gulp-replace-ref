@@ -1,6 +1,6 @@
 {
   "name": "gulp-replace-ref",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Replace file references in the target files",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "dependencies" : {
     "through2" : "0.4.1",
-    "gulp-utils" : "~2.2.14",
+    "gulp-util" : "~2.2.14",
     "vinyl-fs" : "~0.0.2",
     "event-stream" : "~3.1.0"
   },
