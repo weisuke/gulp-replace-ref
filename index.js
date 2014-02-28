@@ -27,7 +27,7 @@ function gulpReplaceRef(opts) {
 
             var strToReplace = srcFile.path.match( opts.srcMatch )[0], stream, targetMatch = opts.targetMatch;
 
-            vfs.src(opts.src).pipe(stream = es.map(function(phpFile, cb){
+            vfs.src(opts.target).pipe(stream = es.map(function(phpFile, cb){
                 //console.log(phpFile.path);
                 var content = phpFile.contents.toString();
                 if(targetMatch(srcFile.path).test(content)){
