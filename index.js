@@ -27,13 +27,12 @@ function gulpReplaceRef(opts) {
 
             var strToReplace = srcFile.path.match( opts.srcMatch )[0], stream, targetMatch = opts.targetMatch;
 
-            vfs.src(opts.target).pipe(stream = es.map(function(phpFile, cb){
+            vfs.src(opts.target).pipe(es.map(function(phpFile, cb){
                 //console.log(phpFile.path);
                 var content = phpFile.contents.toString();
                 if(targetMatch(srcFile.path).test(content)){
                     fs.writeFile(phpFile.path, content.replace(targetMatch(srcFile.path), strToReplace));
                     console.log('php file updated: ' + phpFile.path);
-                    stream.destroy();
                 }
 
                 cb(null, phpFile);
